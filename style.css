@@ -1,0 +1,101 @@
+/* ===== Global Styles ===== */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+h2 {
+  color: #34495e;
+  margin-top: 30px;
+}
+
+/* ===== Form Styles ===== */
+div {
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  width: 120px;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 300px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: white;
+  transition: border 0.3s ease;
+}
+
+input:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #27ae60;
+}
+
+/* ===== Product Cards ===== */
+#productList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-top: 20px;
+}
+
+#productList > div {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  width: 220px;
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+
+#productList > div:hover {
+  transform: translateY(-5px);
+}
+
+#productList h3 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin: 10px 0;
+}
+
+#productList p {
+  font-size: 15px;
+  margin: 4px 0;
+}
+
+#productList img {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+  margin-top: 10px;
+}
